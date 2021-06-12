@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="mb-3">
+                <label>Name:</label>
+                <input type="text" id="name" name="username" placeholder="Enter your name">
+            </div>
+
+            <div class="mb-3">
+                <label>Which coffee would you like to order?</label>
+                <!--radio buttons-->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="coffeetype" value="Turkish" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Turkish coffee $3
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="coffeetype" value="American" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        American coffee $5
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="coffeetype" value="Iced" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        Iced latte $7
+                    </label>
+                  </div>
+            </div>
+
+            <div class="mb-3">
+                <label>Do you need any extras?</label>
+                <!--checkbox-->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="extras" value="extra_coffee" id="extras1">
+                    <label class="form-check-label" for="extras1">
+                        Extra coffee 1.5$.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="extras" value="extra_cream" id="extras2">
+                    <label class="form-check-label" for="extras2">
+                        Whipped cream 2$.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="extras" value="extra_caramel" id="extras3">
+                    <label class="form-check-label" for="extras3">
+                        Extra caramel 3$.
+                    </label>
+                  </div>
+            </div>
+            <!--button-->
+            <button type="button" class="btn btn-primary" id="orderButton">Place Order</button>
+            <!--Print out report-->
+            <div id="result"></div>
+        </div>
+
+    </body>
+</html>
