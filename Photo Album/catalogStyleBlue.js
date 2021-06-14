@@ -2,8 +2,8 @@ $(document).ready(function(){
 
     // $('.gridSection').css({
     //     'background-color':'lightpink'
-    // })
-
+    // })\
+    
     $('.title').css({
         'font-family':'Brush Script MT',
         'font-size':'80px',

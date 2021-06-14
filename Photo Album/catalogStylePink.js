@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $('.gridSection').css({
         'background-color':'lightpink'
     })
