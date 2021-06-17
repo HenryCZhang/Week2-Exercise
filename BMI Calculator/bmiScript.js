@@ -25,6 +25,7 @@ $(document).ready(function(){
         }
     })
 
+
     $('img').css({
         'width':'100%',
         'height': 'auto',

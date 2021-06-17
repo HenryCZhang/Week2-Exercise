@@ -6,6 +6,7 @@
         <script src="bmiScript.js"></script>
     </head>
     <body>
+        <form>
         <div>
             <label for='weight'>Weight in kilograms</label>
             <input type="number" name="weight" placeholder="kg">
@@ -15,11 +16,13 @@
             <input id='height' type="number" name="height" placeholder="m">
         </div>
         <div>
-            <button id="calculateBtn" type="submit">Claculate</button>
+            <input id="calculateBtn" type="submit">Claculate</input>
         </div>
         <h1>Your Results:</h1>
         <p>Results</p>
-        <button>Reset</button>
+
+        <input type="reset" value="Reset">
         <img> 
+    </form>
     </body>
 </html>
